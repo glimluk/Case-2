@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Kommandon</title>
+    <link rel="icon" href="images/favicon.ico.jpg">
+</head>
+
+<body>
+
+    <header>Här hittar man en sida som beskriver olika git kommandon.</header>
+
+    <nav>
+        <pre></pre>
+        <a href="index.html">Återgå till Hemsida</a>
+    </nav>
+
+    <main>
+        <h2>Git Kommandon</h2>
+
+        <p>Här är några användbar git kommandon man använder i terminalen:</p>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Kommando</th>
+                    <th>Vad det gör</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <pre><code>git init .</code></pre>
+                </td>
+                <td>&nbsp;skapar ett tomt git repository</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre><code>git status</code></pre>
+                </td>
+                <td>&nbsp;ser status för ditt repository</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre><code>git add [filnamn]</code></pre>
+                </td>
+                <td>&nbsp;lägger till en fil för att uppdatera ditt repository</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre><code>git commit -m [meddelande]</code></pre>
+                </td>
+                <td>&nbsp;sparar ändringar till repository med ett meddelande</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre><code>git log</code></pre>
+                </td>
+                <td>
+                    &nbsp;ser commit historik<br>
+                    &nbsp;(använd <code>--oneline</code> för att se en kortare log)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <pre><code>git remote add origin main [github url]</code></pre>
+                </td>
+                <td>&nbsp;länkar ditt lokala repo till ditt nyskapade GitHub repo</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre><code>git push</code></pre>
+                </td>
+                <td>
+                    &nbsp;skickar ändringar till ditt git repository<br>
+                    &nbsp;används vanligtvis med <code>-u origin main</code><br>
+                    &nbsp;<code>-f / --force</code> tvingar ett push kommando
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <pre><code>git fetch</code></pre>
+                </td>
+                <td>&nbsp;hämtar från ett repository</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre><code>git pull</code></pre>
+                </td>
+                <td>&nbsp;uppdaterar din local branch från en remote branch</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre><code>git clone [repo url]</code></pre>
+                </td>
+                <td>&nbsp;klonar ett befintlig repo till din local branch</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre><code>git diff</code></pre>
+                </td>
+                <td>&nbsp;visar skillnader mellan dina branches</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre><code>git reset [commit id]</code></pre>
+                </td>
+                <td>&nbsp;återställ till en tidigare commit</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre><code>git restore [filnamn]</code></pre>
+                </td>
+                <td>&nbsp;återställ filen med en tidigare commit</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre><code>git branch</code></pre>
+                </td>
+                <td>
+                    &nbsp;visar existerande branches<br>
+                    &nbsp;använd <code>git branch [ny branch namn]</code> för att skapa en ny branch
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <pre><code>git checkout [branch namn]</code></pre>
+                </td>
+                <td>&nbsp;byter till en annan branch</td>
+            </tr>
+        </table>
+    </main>
+
+</body>
+
+</html>
