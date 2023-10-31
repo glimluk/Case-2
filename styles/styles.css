@@ -1,4 +1,4 @@
-/* nav */
+/* nav - all pages */
 nav {
     background-color: #8B4241;
     position: relative;
@@ -31,6 +31,7 @@ img.thumb {
     height: 50%;
     /* background-color: green; */
 }
+
 
 /* Hemsida CSS */
 #home-body {
@@ -96,6 +97,7 @@ li {
     background-color: rgba(48, 148, 48, 0.315);
 }
 
+
 /* Place (sida 2) CSS */
 #place-body {
     background-color: #CDB189;
@@ -140,4 +142,28 @@ li {
 
 .image {
     border: 2px solid black;
+}
+
+
+/* Evenemang CSS */
+#event-body {
+    text-align: center;
+    background-color: #CDB189;
+    font-size: 18px;
+}
+
+#form-box {
+    width: 800px;
+    background-color: rgba(255, 136, 0, 0.575);
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+}
+
+.trails-input .date-input {
+    float: left;
+}
+
+.float-right {
+    float: right;
 }
