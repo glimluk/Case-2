@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galleri</title>
     <link rel="icon" href="images/favicon.ico.jpg">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
+<body id="gallery-body">
 
     <header>
         Här hittar man ett galleri om olika djur och ställen man hittar i Glimåkra.
@@ -17,33 +18,38 @@
 
 
     <nav>
-        <pre></pre>
-
-        <a href="index.html">Hemsida</a> &nbsp;|&nbsp; <a href="trollabackarna.html">Om Trollabackarna</a>
-        &nbsp;|&nbsp;
-        <a href="event.html">Vandring Evenemang</a> &nbsp;|&nbsp; <a href="gallery.html"><b>Galleri</b></a>
+        <div id="nav-thumb">
+            <img class="thumb" src="images/favicon.ico.jpg" alt="">
+        </div>
+            <a href="index.html">Hemsida</a>
+            <a href="trollabackarna.html">Om Trollabackarna</a>
+            <a href="event.html">Vandring Evenemang</a>
+            <a href="gallery.html">Galleri</a>
     </nav>
 
 
     <main>
         <h1>Galleri</h1>
 
+        <h4>Natur</h4>
 
-        <section>
-            <h3>Bilder</h3>
+        <div class="img-container">
+            <div class="img-portrait" style="background-image: url(images/glimakara-skog.jpg);"></div>
+            <div class="line"></div>
+            <div class="img-portrait" style="background-image: url(images/stenbrott.jpg);"></div>
+            <div class="line"></div>
+            <div class="img-portrait" style="background-image: url(images/vinter.jpg);"></div>
+        </div>
 
-            <h4>Natur</h4>
+        <h4>Djur</h4>
 
-            <img src="images/glimakara-skog.jpg" alt="forest" width="400" id="forest">
-            <img src="images/stenbrott.jpg" alt="quarry" width="400">
-            <img src="images/vinter.jpg" alt="winter" width="400">
-
-            <h4>Djur</h4>
-
-            <img src="images/kor.jpg" alt="cows" width="400" height="533" id="cows">
-            <img src="images/katt.jpg" alt="cat" width="400">
-            <img src="images/humla.jpg" alt="bumblebee" width="400">
-        </section>
+        <div class="img-container">
+            <div class="img-portrait" style="background-image: url(images/kor.jpg);"></div>
+            <div class="line"></div>
+            <div class="img-portrait" style="background-image: url(images/katt.jpg);"></div>
+            <div class="line"></div>
+            <div class="img-portrait" style="background-image: url(images/humla.jpg);"></div>
+        </div>
 
         <section>
 
