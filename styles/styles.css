@@ -100,7 +100,9 @@ li {
 
 /* Place (sida 2) CSS */
 #place-body {
-    background-color: #CDB189;
+    /* background-color: #CDB189; */
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
     font-size: 18px;
 }
 
@@ -148,7 +150,9 @@ li {
 /* Evenemang CSS */
 #event-body {
     text-align: center;
-    background-color: #CDB189;
+    /* background-color: #CDB189; */
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
     font-size: 18px;
 }
 
@@ -166,4 +170,35 @@ li {
 
 .float-right {
     float: right;
+}
+
+/* Galleri CSS */
+#gallery-body {
+    font-size: 20px;
+    background-color: #CDB189;
+}
+
+.img-container {
+    display: flex;
+    text-align: center;
+}
+
+.line {
+    width: 5%; 
+    height: 100%;
+    border: 1px black solid;
+    align-self: center;
+}
+
+/* .img-landscape {
+    width: 400px;
+    height: 300px;
+    margin: 1rem;
+} */
+
+.img-portrait {
+    width: 325px;
+    height: 450px;
+    margin: 1rem;
+    background-size: cover;
 }
