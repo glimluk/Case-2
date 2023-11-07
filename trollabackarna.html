@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body id="place-body">
+<body id="place-body" style="background-image: url(images/stenbrott.jpg);">
 
-    <header>
+    <header id="place-header">
         En sida som berättar om Trollabackarna, en naturplats man kan hitta i Glimåkra.
     </header>
 
@@ -20,110 +20,127 @@
         <div id="nav-thumb">
             <img class="thumb" src="images/favicon.ico.jpg" alt="">
         </div>
-            <a href="index.html">Hemsida</a>
-            <a href="trollabackarna.html">Om Trollabackarna</a>
-            <a href="event.html">Vandring Evenemang</a>
-            <a href="gallery.html">Galleri</a>
+        <ul>
+            <li><a href="index.html">Hemsida</a></li>
+            <li><a class="active" href="trollabackarna.html">Om Trollabackarna</a></li>
+            <li><a href="event.html">Vandring Evenemang</a></li>
+            <li><a href="gallery.html">Galleri</a></li>
+        </ul>
     </nav>
 
+    <h1>Om Trollabackarna</h1>
     <main id="place-main">
 
-        <article class="a1">
-            <h1>Om Trollabackarna</h1>
+        <div class="b1">
+            <article class="a1">
+                <h1>Introduktion</h1>
 
-            <p>
-                I Glimåkra finns det en skogsterräng som heter Trollabackarna där man kan vandra i skogen. Man kan
-                vandra längs fyra olika färgade leder, Skåneleder, och en trollstig. Man kan hitta Trollabackarna brevid
-                simplatsen Trollabadet.
-            </p>
-        </article>
+                <p>
+                    I Glimåkra finns det en skogsterräng som heter Trollabackarna där man kan vandra i skogen. Man kan
+                    vandra längs fyra olika färgade leder, Skåneleder, och en trollstig. Man kan hitta Trollabackarna
+                    brevid
+                    simplatsen Trollabadet.
+                </p>
+            </article>
 
-        <iframe class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2212.7936485296614!2d14.152281676921369!3d56.316134448461305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4656b26c958c08eb%3A0xaf095d13cbf3a3da!2sTrollabadet!5e0!3m2!1sen!2sse!4v1694167366239!5m2!1sen!2sse"
-            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+            <div class="container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2212.7936485296614!2d14.152281676921369!3d56.316134448461305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4656b26c958c08eb%3A0xaf095d13cbf3a3da!2sTrollabadet!5e0!3m2!1sen!2sse!4v1694167366239!5m2!1sen!2sse"
+                    width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
 
-        <table border="1">
-            <thead>
+        <div class="b2">
+            <figure class="container">
+                <img src="images/trollstigen.jpg" alt="Trollstigen" width="400">
+
+                <figcaption>
+                    ©<a href="https://www.kristianstadsbladet.se/ostra-goinge/trollstigen-invigdes-med-30-tal-barn-efter-lindas-ide-2ba86fd5/"
+                        target="_blank">Mikael Persson</a>,
+                    <a href="https://www.kristianstadsbladet.se/" target="_blank">Kristianstadbladet</a>
+                </figcaption>
+            </figure>
+
+            <article class="a2">
+                <h1>Trollstigen</h1>
+
+                <p>
+                    Trollstigen är en annan stig där man kan se trollhus och andra trollreleterade saker i skogen. Det
+                    är
+                    kortare än de andra slingorna och leder direkt till Trollacenter (idrottsplats).
+                </p>
+            </article>
+
+        </div>
+
+
+        <div class="b3">
+            <article class="a3">
+                <h1>De Fyra Färglederna</h1>
+
+                <p>
+                    De färgade lederna är lämpliga för de som tycker om att vandra. Avstånden varierar mellan dem och
+                    terrängen kan förändras (t.ex. platt till kuperad). Det finns olika sevärdheter längs lederna, t.ex.
+                    Måns backstuga, en gammal stuga där en familj bodde förr i tiden, och ett stenbrott som finns längs blå
+                    slingan. Det står också skyltar och teckningar om Glimåkras historia längs lederna. Genom området går också
+                    en Skåneled.
+                </p>
+            </article>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th class="th-number"></th>
+                        <th class="th-color">Färg</th>
+                        <th class="th-length">Längd</th>
+                        <th>Sevärdhet</th>
+                    </tr>
+                </thead>
                 <tr>
-                    <th></th>
-                    <th>Färg</th>
-                    <th>Längd</th>
-                    <th>Sevärdhet</th>
+                    <td>1</td>
+                    <td>Röd slinga</td>
+                    <td>2.3km</td>
+                    <td>Torpruin</td>
                 </tr>
-            </thead>
-            <tr>
-                <td>1</td>
-                <td>Röd slinga</td>
-                <td>2.3km</td>
-                <td>Torpruin</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Gul slinga</td>
-                <td>3.0km</td>
-                <td>Trollstigen (delvis), Torpruin</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Grön slinga</td>
-                <td>3.8km</td>
-                <td>Måns backstuga</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Blå slinga</td>
-                <td>7.4km</td>
-                <td>Trollstigen (delvis), Stenbrott, Måns backstuga</td>
-            </tr>
-            <tfoot>
                 <tr>
-                    <td colspan="4">Vissa leder överlappar och delar samma sevärdheterna.</td>
+                    <td>2</td>
+                    <td>Gul slinga</td>
+                    <td>3.0km</td>
+                    <td>Trollstigen (delvis), Torpruin</td>
                 </tr>
-            </tfoot>
-        </table>
+                <tr>
+                    <td>3</td>
+                    <td>Grön slinga</td>
+                    <td>3.8km</td>
+                    <td>Måns backstuga</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Blå slinga</td>
+                    <td>7.4km</td>
+                    <td>Trollstigen (delvis), Stenbrott, Måns backstuga</td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Vissa leder överlappar och delar samma sevärdheterna.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
 
-        <article class="a2">
-            <h1>De Fyra Färglederna</h1>
 
-            <p>
-                De färgade lederna är lämpliga för de som tycker om att vandra. Avstånden varierar mellan dem och
-                terrängen kan förändras (t.ex. platt till kuperad). Det finns olika sevärdheter längs lederna, t.ex. Måns
-                backstuga, en gammal stuga där en familj bodde förr i tiden, och ett stenbrott som finns längs blå slingan.
-                Det står också skyltar och teckningar om Glimåkras historia längs lederna. Genom området går också en
-                Skåneled.
-            </p>
-        </article>
-
-        <article class="a3">
-            <h1>Trollstigen</h1>
-
-            <p>
-                Trollstigen är en annan stig där man kan se trollhus och andra trollreleterade saker i skogen. Det är
-                kortare än de andra slingorna och leder direkt till Trollacenter (idrottsplats).
-            </p>
-        </article>
-
-        <figure class="image">
-            <img src="images/trollstigen.jpg" alt="Trollstigen" width="400">
-
-            <figcaption>
-                ©<a href="https://www.kristianstadsbladet.se/ostra-goinge/trollstigen-invigdes-med-30-tal-barn-efter-lindas-ide-2ba86fd5/"
-                    target="_blank">Mikael Persson</a>,
-                <a href="https://www.kristianstadsbladet.se/" target="_blank">Kristianstadbladet</a>
-            </figcaption>
-        </figure>
     </main>
 
-    <br><br><br><br><br><br><br>
+    <!-- <br><br><br><br><br><br><br>
 
     <footer>
         <hr>
         Läs mer om Trollabackarna <a
             href="https://www.ostragoinge.se/uppleva/kultur/kulturarv/den-folkliga-berattartraditionen/sagner/trollabackarna/"
             target="_blank">här</a>.
-    </footer>
+    </footer> -->
 
 
 </body>
