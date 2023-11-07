@@ -1,35 +1,70 @@
-/* nav - all pages */
+/* global elements */
+/* double-check even spacing */
+/* font */
+/* breakpoint */
+/* flags */
+
 nav {
     background-color: #8B4241;
-    position: relative;
-    width: 100%;
-    height: 100%;
+    /* position: relative; */
+    /* width: 100%;
+    height: 100%; */
     margin-bottom: 1rem;
     display: flex;
+    font-size: 30px;
+    border: 2px solid black;
 }
 
 nav a {
     text-decoration: none;
     color: #CDB189;
-    padding-top: 15px;
-    padding-left: 150px;
+    /* padding-top: 10px; */
 }
 
-nav:hover {
-    color: black;
+nav a:hover {
+    background-color: #91640F;
+    text-decoration: underline;
+    /* width: 50%;
+    height: 50%; */
+}
+
+nav ul {
+    /* margin: 0;
+    padding: 0; */
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 2rem;
+}
+
+.active {
+    background-color: #312818;
+    text-decoration: underline;
 }
 
 img.thumb {
-    width: 30px;
-    border-radius: 50%;
+    width: 70px;
+    border-radius: 30%;
 }
 
 #nav-thumb {
     padding: 10px;
     border-radius: 1%;
-    width: 2%;
     height: 50%;
     /* background-color: green; */
+}
+
+header {
+    margin: auto;
+    margin-bottom: 5px;
+    width: 40%;
+    border-radius: 10px;
+    background-color: #843a21d5;
+    color: aliceblue;
+    border: 1px solid black;
+    font-size: 20px;
 }
 
 
@@ -103,47 +138,71 @@ li {
     /* background-color: #CDB189; */
     background-color: rgba(255, 255, 255, 0.6);
     background-blend-mode: lighten;
+    text-align: center;
     font-size: 18px;
+    
+}
+
+#place-header {
+    width: 45%;
 }
 
 #place-main {
     height: 100vh;
-    width: 100%;
+    width: 900px;
+    margin: auto;
+    gap: 10px;
+    color: #D8AC82;
+    margin-bottom: 100px;
+
     display: grid;
     grid-template-columns: repeat(1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-    color: #843921;
-    text-align: center;
 
     grid-template-areas:
-        "a1 map"
-        "table a2"
-        "a3 image";
+        "b1"
+        "b2"
+        "b3";
 }
 
-.a1 {
+.b1, .b2, .b3 {
+    display: flex;
     border: 2px solid black;
+    background-color: #843a21d5;
+    padding: 10px;
 }
 
-.a2 {
-    border: 2px solid black;
+.b3 {
+    
+}
+
+.a1, .a2, .a3 {
+    padding: 10px;
 }
 
 .a3 {
-    border: 2px solid black;
+    width: 60%;
 }
 
-.map {
-    border: 2px solid black;
+table {
+    background-color: rgb(230, 168, 137);
+    color: black;
 }
 
-.table {
-    border: 2px solid black;
+table, th, td {
+    border: 1px solid black;
 }
 
-.image {
-    border: 2px solid black;
+.th-number {
+    width: 5%;
+}
+
+.th-color {
+    width: 25%;
+}
+
+.th-length {
+    width: 15%;
 }
 
 
@@ -156,9 +215,14 @@ li {
     font-size: 18px;
 }
 
+#event-header {
+    width: 25%;
+}
+
 #form-box {
     width: 800px;
-    background-color: rgba(255, 136, 0, 0.575);
+    background-color: #843a21d5;
+    background-color: rgba(255, 136, 0, 0.7);
     text-align: center;
     margin: auto;
     padding: 1rem;
@@ -172,10 +236,32 @@ li {
     float: right;
 }
 
+button {
+    padding: 10px;
+    margin: 10px;
+    background-color: #cf8483;
+    font-size: 20px;
+    color: #000000;
+}
+
+
 /* Galleri CSS */
 #gallery-body {
     font-size: 20px;
     background-color: #CDB189;
+    /* margin: auto; */
+}
+
+#gallery-header {
+    width: 40%;
+    text-align: center;
+}
+
+#gallery-main {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    /* background-color: #000000; */
 }
 
 .img-container {
@@ -201,4 +287,76 @@ li {
     height: 450px;
     margin: 1rem;
     background-size: cover;
+}
+
+
+/* flags CSS */
+/* FR */
+.flag {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.white {
+    background-color: snow;
+}
+
+.red {
+    background-color: red;
+}
+
+/* NL, SE */
+
+.flag2 {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.NL-red {
+    background-color: rgb(173, 29, 37);
+}
+
+.NL-white {
+    background-color: white;
+}
+
+.NL-blue {
+    background-color: rgb(30, 71, 133);
+}
+
+.flag-SE-bookend {
+    width: 300px;
+    height: 80px;
+    display: flex;
+}
+
+.SE-smallblue {
+    width: 80px;
+    background-color: rgb(0, 106, 167);
+}
+
+.SE-smallyellow {
+    width: 40px;
+    background-color: rgb(254, 204, 2);
+}
+
+.SE-bigblue {
+    width: 180px;
+    background-color: rgb(0, 106, 167);
+}
+
+.flag-SE-middle {
+    width: 300px;
+    height: 40px;
+    background-color: rgb(254, 204, 2);
 }
