@@ -10,16 +10,19 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body id="home-body" style="background-image: url(images/vinter.jpg);">
+<body id="home-body">
 
     <nav>
         <div id="nav-thumb">
             <img class="thumb" src="images/favicon.ico.jpg" alt="">
         </div>
         <ul>
-            <li><a class="active" href="index.html">Hemsida</a></li>
+            <li><a class="active" href="index.html">Startsida</a></li>
+            <li class="nav-dividers">|</li>
             <li><a href="trollabackarna.html">Om Trollabackarna</a></li>
+            <li class="nav-dividers">|</li>
             <li><a href="event.html">Vandring Evenemang</a></li>
+            <li class="nav-dividers">|</li>
             <li><a href="gallery.html">Galleri</a></li>
         </ul>
     </nav>
@@ -39,7 +42,7 @@
             </p>
 
             <figure>
-                <img src="images/glimakara-skog.jpg" alt="forest" width="400">
+                <img class="forest" src="images/glimakara-skog.jpg" alt="forest" width="400">
                 <figcaption><i>Glimåkras skog</i> &nbsp; <a href="gallery.html#forest">(Se mer bilder i galleriet.)</a>
                 </figcaption>
             </figure>
@@ -47,10 +50,9 @@
 
         <div class="lists">
             <div id="ul-list">
-                <p>
+                <p class="ul-text">
                     Några av mina intressen är att:
                 </p>
-
                 <ul>
                     <li>📺 titta på filmer/serier</li>
                     <li>🎮 spela videospel</li>
@@ -60,7 +62,7 @@
             </div>
 
             <div id="ol-list">
-                <p>Mina 3 bra ställen i Glimåkra</p>
+                <p class="ul-text">Mina 3 bra ställen i Glimåkra:</p>
 
                 <ol>
                     <li>Skogen</li>
@@ -72,11 +74,9 @@
     </main>
 
     <footer id="home-footer">
-        <details>
-            <summary>extra</summary>
-            <p><a href="git.html">Hemlig sida</a></p>
-            <p><a href="flags.html">Flags of the World</a></p>
-        </details>
+        <p><a href="git.html">Git Kommando</a></p>
+        <p><a href="flags.html">Flaggor</a></p>
+        <p>&#169; Lukas Zetterlund</p>
     </footer>
 
 </body>
