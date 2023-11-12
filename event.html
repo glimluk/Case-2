@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body id="event-body" style="background-image: url(images/glimakara-skog.jpg);">
+<body id="event-body">
 
     <header id="event-header">
         En sida om ett evenemang i Trollabackarna.
@@ -21,7 +21,7 @@
             <img class="thumb" src="images/favicon.ico.jpg" alt="">
         </div>
         <ul>
-            <li><a href="index.html">Hemsida</a></li>
+            <li><a href="index.html">Startsida</a></li>
             <li><a href="trollabackarna.html">Om Trollabackarna</a></li>
             <li><a class="active" href="event.html">Vandring Evenemang</a></li>
             <li><a href="gallery.html">Galleri</a></li>
@@ -54,14 +54,14 @@
             <figure class="float-right">
                 <img src="images/trollabackarna-karta.jpg" alt="Karta av Trollbackarna" width="400">
         
-                <figcaption>
+                <figcaption class="credit">
                     ©<a href="https://glimakra.org/trollstigen-amp-motionsslingor/" target="_blank">Glimåkra
                         Utveckling</a>, <a href="https://glimakra.org/" target="_blank">glimakra.org</a>
                 </figcaption>
             </figure>
 
             <p class="trails-input">
-                <label for="trails">Vilken slinga vill du gå? (Kolla gärna med kartan ovan vilken som passar
+                <label for="trails">Vilken slinga vill du gå? (Kolla gärna med kartan till höger vilken som passar
                     dig!)</label><br>
                 <select name="trails" id="trails" required>
                     <option disabled selected value> -- Välj en slinga -- </option>
@@ -101,22 +101,22 @@
                 <legend>Vad gillar du om vandring?</legend>
 
                 <div>
-                    <input type="checkbox" name="option_nature" id="option_nature">
+                    <input type="checkbox" class="checkbox" name="option_nature" id="option_nature">
                     <label for="option_nature">Naturen</label>
                 </div>
 
                 <div>
-                    <input type="checkbox" name="option_exercise" id="option_exercise">
+                    <input type="checkbox" class="checkbox" name="option_exercise" id="option_exercise">
                     <label for="option_exercise">Träning</label>
                 </div>
 
                 <div>
-                    <input type="checkbox" name="option_meet" id="option_meet">
+                    <input type="checkbox" class="checkbox" name="option_meet" id="option_meet">
                     <label for="option_meet">Att umgås</label>
                 </div>
 
                 <div>
-                    <input type="checkbox" name="option_other" id="option_other">
+                    <input type="checkbox" class="checkbox" name="option_other" id="option_other">
                     <label for="option_other">Andra</label>
                 </div>
 
@@ -145,6 +145,12 @@
 
         </form>
     </main>
+
+    <footer id="event-footer">
+        <p><a href="git.html">Git Kommando</a></p>
+        <p><a href="flags.html">Flaggor</a></p>
+        <p>&#169; Lukas Zetterlund</p>
+    </footer>
 
 </body>
 
