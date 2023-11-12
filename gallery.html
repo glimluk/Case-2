@@ -17,12 +17,12 @@
     </header>
 
 
-        <nav>
+    <nav>
         <div id="nav-thumb">
             <img class="thumb" src="images/favicon.ico.jpg" alt="">
         </div>
         <ul>
-            <li><a href="index.html">Hemsida</a></li>
+            <li><a href="index.html">Startsida</a></li>
             <li><a href="trollabackarna.html">Om Trollabackarna</a></li>
             <li><a href="event.html">Vandring Evenemang</a></li>
             <li><a class="active" href="gallery.html">Galleri</a></li>
@@ -36,73 +36,102 @@
         <h4>Natur</h4>
 
         <div class="img-container">
-            <div class="img-portrait" style="background-image: url(images/glimakara-skog.jpg);"></div>
+            <figure>
+                <div class="img-portrait" style="background-image: url(images/glimakara-skog.jpg);"></div>
+                <figcaption><i>Glimåkras skog</i></figcaption>
+            </figure>
             <div class="line"></div>
-            <div class="img-portrait" style="background-image: url(images/stenbrott.jpg);"></div>
+            <figure>
+                <div class="img-portrait" style="background-image: url(images/stenbrott.jpg);"></div>
+                <figcaption><i>Stenbrottet</i></figcaption>
+            </figure>
             <div class="line"></div>
-            <div class="img-portrait" style="background-image: url(images/vinter.jpg);"></div>
+            <figure>
+                <div class="img-portrait" style="background-image: url(images/vinter.jpg);"></div>
+                <figcaption><i>Skogen i vinter</i></figcaption>
+            </figure>
         </div>
 
         <h4>Djur</h4>
 
         <div class="img-container">
-            <div class="img-portrait" style="background-image: url(images/kor.jpg);"></div>
+            <figure>
+                <div class="img-portrait" style="background-image: url(images/kor.jpg);"></div>
+                <figcaption><i>Nyfikna kor</i></figcaption>
+            </figure>
             <div class="line"></div>
-            <div class="img-portrait" style="background-image: url(images/katt.jpg);"></div>
+            <figure>
+                <div class="img-portrait" style="background-image: url(images/katt.jpg);"></div>
+                <figcaption class="cat-caption"><i>Katten som hänger runt skolan</i></figcaption>
+            </figure>
             <div class="line"></div>
-            <div class="img-portrait" style="background-image: url(images/humla.jpg);"></div>
+            <figure>
+                <div class="img-portrait" style="background-image: url(images/humla.jpg);"></div>
+                <figcaption><i>En humla som får mat</i></figcaption>
+            </figure>
         </div>
 
         <section>
 
-            <hr>
+            <hr class="medium-divider">
 
-            <h3>Ljudfiler</h3>
+            <details>
+                <summary>Ljudfiler</summary>
 
-            <p>En fågel man kan höra i Glimåkra är gröngölingen (<i>Picus viridis</i>). Det låter så här:</p>
+                <p>En fågel man kan höra i Glimåkra är gröngölingen (<i>Picus viridis</i>). Det låter så här:</p>
 
-            <figure>
-                <audio src="audio/Picus_viridis_-_European_Green_Woodpecker_XC416424.mp3" controls></audio>
-                <figcaption>
-                    <a href="https://commons.wikimedia.org/wiki/File:Picus_viridis_-_European_Green_Woodpecker_XC416424.mp3"
-                        target="_blank">Alvaro Ortiz Troncoso</a>,
-                    <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC
-                        BY-SA 4.0</a>, via Wikimedia Commons
-                </figcaption>
-            </figure>
+                <figure>
+                    <audio src="audio/Picus_viridis_-_European_Green_Woodpecker_XC416424.mp3" controls></audio>
+                    <figcaption class="audio-credit">
+                        <a href="https://commons.wikimedia.org/wiki/File:Picus_viridis_-_European_Green_Woodpecker_XC416424.mp3"
+                            target="_blank">Alvaro Ortiz Troncoso</a>,
+                        <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC
+                            BY-SA 4.0</a>, via Wikimedia Commons
+                    </figcaption>
+                </figure>
+            </details>
         </section>
 
-        <hr>
+        <hr class="medium-divider">
 
-        <section>
+        <details>
+            <summary>Videofiler</summary>
+            <section>
 
-            <h3>Videofiler</h3>
+                <p>En annan fågel man kan se i Glimåkra är röd gladan, som visas i videorna här:</p>
 
-            <p>En annan fågel man kan se i Glimåkra är röd gladan, som visas i videorna här:</p>
+                <div class="video-container">
+                    <figure>
+                        <video
+                            src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Zittende_en_vliegende_rode_wouw-4961941.webm"
+                            controls width="400"></video>
+                        <figcaption class="credit">
+                            <a href="https://commons.wikimedia.org/wiki/File:Zittende_en_vliegende_rode_wouw-4961941.webm"
+                                target="_blank">Marc Plomp</a>,
+                            <a href="https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en" target="_blank">
+                                CC BY-SA 3.0 NL</a>, via Wikimedia Commons
+                        </figcaption>
+                    </figure>
 
-            <figure>
-                <video
-                    src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Zittende_en_vliegende_rode_wouw-4961941.webm"
-                    controls width="400"></video>
-                <figcaption>
-                    <a href="https://commons.wikimedia.org/wiki/File:Zittende_en_vliegende_rode_wouw-4961941.webm"
-                        target="_blank">Marc Plomp</a>,
-                    <a href="https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en" target="_blank">
-                        CC BY-SA 3.0 NL</a>, via Wikimedia Commons
-                </figcaption>
-            </figure>
-
-            <figure>
-                <iframe width="400" height="320" src="https://www.youtube.com/embed/3sB_-cBAUZ8?si=xKviBfue0PQ9NL-B">
-                </iframe>
-                <figcaption>
-                    <a href="https://www.youtube.com/watch?v=3sB_-cBAUZ8" target="_blank">vogelarchiv.de</a>,
-                    via <a href="https://www.youtube.com/" target="_blank">YouTube</a>
-                </figcaption>
-            </figure>
-
-        </section>
+                    <figure>
+                        <iframe width="400" height="225"
+                            src="https://www.youtube.com/embed/3sB_-cBAUZ8?si=xKviBfue0PQ9NL-B">
+                        </iframe>
+                        <figcaption class="credit">
+                            <a href="https://www.youtube.com/watch?v=3sB_-cBAUZ8" target="_blank">vogelarchiv.de</a>,
+                            via <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+        </details>
     </main>
+
+    <footer id="home-footer">
+        <p><a href="git.html">Git Kommando</a></p>
+        <p><a href="flags.html">Flaggor</a></p>
+        <p>&#169; Lukas Zetterlund</p>
+    </footer>
 
 </body>
 
