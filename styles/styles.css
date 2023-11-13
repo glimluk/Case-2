@@ -125,14 +125,24 @@ footer:hover, #place-footer:hover, #event-footer:hover {
 
 @media screen and (max-width: 480px) {
     footer {
-        height: 50px;
+        height: 35px;
         width: 100%;
         justify-content: center;
-        left: -260px;
+        left: 0px;
+        padding-bottom: 10px;
+    }
+
+    #gallery-footer {
+        width: 380px;
+        left: -200px;
+    }
+
+    #gallery-footer p {
+        padding-left: 1px;
     }
 
     footer p {
-        padding: 5px;
+        padding-top: 0px;
     }
 
 }
@@ -220,6 +230,14 @@ li {
     img.forest {
         width: 300px;
     }
+
+    .ul-text {
+        margin: .5rem;
+    }
+
+    #ul-list ul, #ol-list ol {
+        padding-left: 20%;
+    }
 }
 
 
@@ -238,7 +256,6 @@ li {
 }
 
 #place-main {
-    /* height: 100vh; */
     width: 900px;
     margin: auto;
     gap: 10px;
@@ -291,30 +308,39 @@ table, th, td {
 }
 
 @media screen and (max-width: 480px) {    
+    #place-main {
+        width: 480px;
+        margin: 0;
+    }
+
+    h2 {
+        margin: 0;
+        padding-top: 10px;
+    }
+    
     .b1, .b2, .b3 {
         display: grid;
-        width: 470px;
+        width: 90%;
         text-align: center;
+        margin: 0;
         padding: 10px;
     }
 
-    /* .b2 {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "a2"
-            "iframe-container"
-    } */
-
-    /* iframe {
-        width: 300px;
+    .a1, .a2, .a3 {
+        padding: 0%;
     }
 
-    img {
-        width: 300px;
-    } */
+    .iframe-container iframe {
+        width: 420px;
+    }
+
+    .container {
+        margin: 0;
+    }
 
     .a3 {
         width: 100%;
+        padding-right: 1rem;
     }
 }
 
@@ -343,23 +369,39 @@ table, th, td {
 #form-box {
     width: 800px;
     background-color: #843a21d5;
-    background-color: rgba(255, 136, 0, 0.7);
+    background-color: rgba(255, 136, 0, 0.8);
     text-align: center;
     margin: auto;
     padding: 1rem;
 }
 
-.trails-input .date-input {
-    float: left;
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.lastname-input {
+    padding: 0;
 }
 
-.float-right {
+.trails-input .date-input {
+    float: left;
+
+}
+
+#trails, #date {
+    margin-bottom: 1rem;
+}
+
+.trolla-map {
     float: right;
+    margin-right: 1rem;
 }
 
 fieldset {
     text-align: left;
-    padding-left: 40%;
+    padding-left: 10%;
+    margin-left: 1rem;
+}
+
+.medical-box {
+    margin-top: 3rem;
 }
 
 button {
@@ -377,6 +419,18 @@ button:hover {
 @media screen and (max-width: 480px) {    
     #form-box {
         width: 400px;
+    }
+
+    .trolla-map {
+        margin: auto;
+    }
+
+    .trolla-map .credit {
+        margin-bottom: 1rem;
+    }
+
+    .trails-input, .date-input, .grill, fieldset, .medical-box {
+        margin: auto;
     }
 }
 
@@ -464,9 +518,86 @@ audio, video, figure iframe {
     margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 480px) {
+    #gallery-main {
+        width: auto;
+        
+    }
+
+    .img-container {
+        display: grid;
+    }
+
+    h4 {
+        margin-bottom: -1rem;
+    }
+
+    .img-portrait {
+        margin: auto;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    .img-container figcaption {
+        width: 60%;
+        margin: auto;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .medium-divider {
+        width: auto;
+    }
+
+    .audio-credit, .credit {
+        width: auto;
+    }
+
+    .video-container {
+        display: grid;
+    }
+
+}
+
+
+/* git commands CSS */
+#git-body {
+    background-color: #D8AC82;
+}
+
+.git-header {
+    width: 33%;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.git-table {
+    margin: auto;
+}
+
 
 /* flags CSS */
 /* FR */
+#flags-body {
+    background-color: #D8AC82;
+    width: 37%;
+}
+
+h3 {
+    text-align: center;
+    padding-right: 47%;
+}
+
+.flag-caption {
+    width: 50%;
+    margin: 10px 0 0 0;
+    padding: 10px;
+    text-align: center;
+}
+
 .flag {
     width: 300px;
     height: 200px;
@@ -487,7 +618,7 @@ audio, video, figure iframe {
     background-color: red;
 }
 
-/* NL, SE */
+/* Netherlands (NL), Sweden (SE) */
 
 .flag2 {
     width: 300px;
@@ -534,6 +665,24 @@ audio, video, figure iframe {
     width: 300px;
     height: 40px;
     background-color: rgb(254, 204, 2);
+}
+
+/* Canada (CN) */
+.CN {
+    width: 75px;
+    height: 200px;
+    background-color: red;
+}
+
+.CN-white {
+    width: 150px;
+    background-color: white;
+}
+
+#maple_leaf {
+   width: 90%;
+   padding-left: 5%;
+   padding-top: 20%;
 }
 
 
