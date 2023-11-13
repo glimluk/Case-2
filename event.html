@@ -22,8 +22,11 @@
         </div>
         <ul>
             <li><a href="index.html">Startsida</a></li>
+            <li class="nav-dividers">|</li>
             <li><a href="trollabackarna.html">Om Trollabackarna</a></li>
+            <li class="nav-dividers">|</li>
             <li><a class="active" href="event.html">Vandring Evenemang</a></li>
+            <li class="nav-dividers">|</li>
             <li><a href="gallery.html">Galleri</a></li>
         </ul>
     </nav>
@@ -44,14 +47,14 @@
                 <input type="text" name="first_name" id="first_name" required>
             </p>
 
-            <p>
+            <p class="lastname-input">
                 <label for="last_name">Ditt efternamn</label><br>
                 <input type="text" name="last_name" id="last_name" required>
             </p>
 
             <br>
 
-            <figure class="float-right">
+            <figure class="trolla-map">
                 <img src="images/trollabackarna-karta.jpg" alt="Karta av Trollbackarna" width="400">
         
                 <figcaption class="credit">
@@ -79,22 +82,9 @@
                 <input type="date" name="date" id="date" min="2023-10-13" max="2023-10-15" required>
             </p>
 
-            <p>
+            <p class="grill">
                 <label for="grill">Kryssa i rutan om du vill delta i grill-lunchen.</label><br>
                 <input type="checkbox" name="grill" id="grill">
-            </p>
-
-            <p>
-                <label for="medical">Har du några medikalisk bekymmer? Beskriv det i rutan nedan så kan vi hitta en
-                    lösning.</label><br>
-                <textarea name="text" id="medical" cols="35" rows="8"></textarea>
-            </p>
-
-            <br>
-
-            <p>
-                <label for="reference">Hur fick du höra talas om evenemanget?</label><br>
-                <input type="text" name="reference" id="reference">
             </p>
 
             <fieldset>
@@ -119,8 +109,20 @@
                     <input type="checkbox" class="checkbox" name="option_other" id="option_other">
                     <label for="option_other">Andra</label>
                 </div>
-
             </fieldset>
+
+            <br>           
+
+            <p class="medical-box">
+                <label for="medical">Har du några medikalisk bekymmer?<br>Beskriv det i rutan nedan så kan vi hitta en
+                    lösning.</label><br>
+                <textarea name="text" id="medical" cols="35" rows="8"></textarea>
+            </p>
+
+            <p>
+                <label for="reference">Hur fick du höra talas om evenemanget?</label><br>
+                <input type="text" name="reference" id="reference">
+            </p>
 
             <hr>
 
