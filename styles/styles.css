@@ -95,7 +95,7 @@ footer {
     display: flex;
     background-color: rgba(139, 66, 65, 0.315);
     text-align: center;
-    text-wrap: nowrap;
+    /* text-wrap: nowrap; */
 }
 
 footer a {
@@ -119,17 +119,8 @@ footer:hover, #place-footer:hover, #event-footer:hover {
         padding-bottom: 10px;
     }
 
-    #place-footer, #event-footer {
+    #place-footer, #event-footer, #gallery-footer {
         display: none;
-    }
-
-    #gallery-footer {
-        width: 380px;
-        left: -200px;
-    }
-
-    #gallery-footer p {
-        padding-left: 1px;
     }
 
     footer p {
@@ -571,11 +562,6 @@ audio, video, figure iframe {
 #flags-body {
     background-color: #D8AC82;
     width: 37%;
-}
-
-h3 {
-    text-align: center;
-    padding-right: 410px;
 }
 
 .flag-caption {
